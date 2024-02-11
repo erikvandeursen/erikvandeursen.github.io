@@ -6,43 +6,87 @@ import aboutImg from "@/assets/about-astro.png";
 
 const meta = {
 	title: "About",
-	description: "I'm a starter theme for Astro.build",
+	description: "About page for erikvandeursen.github.io",
 };
+
+const cactusTech: Array<{ title: string; desc: string; href: string }> = [
+	{
+		title: "Astro",
+		desc: "Build fast websites, faster.",
+		href: "https://astro.build",
+	},
+	{
+		title: "Tailwind CSS",
+		desc: "Rapidly build modern websites without ever leaving your HTML.",
+		href: "https://tailwindcss.com",
+	},
+	{
+		title: "Markdown",
+		desc: "Simple and easy-to-use markup language.",
+		href: "https://www.markdownguide.org/",
+	},
+	{
+		title: "MDX",
+		desc: "Markdown for the component era.",
+		href: "https://mdxjs.com/",
+	},
+	{
+		title: "Satori",
+		desc: "Generating png Open Graph images for blog posts.",
+		href: "https://github.com/vercel/satori",
+	},
+	{
+		title: "Pagefind",
+		desc: "A fully static search library.",
+		href: "https://pagefind.app/",
+	},
+	{
+		title: "Astro Icon",
+		desc: "An easy to use Icon component for Astro.",
+		href: "https://github.com/natemoo-re/astro-icon#readme",
+	},
+	{
+		title: "Expressive Code",
+		desc: "Highly customisable source code & syntax highlighter",
+		href: "https://expressive-code.com/",
+	},
+];
 ---
 
 <PageLayout meta={meta}>
 	<div class="space-y-6">
 		<h1 class="title">About</h1>
 		<p>
-			Hi, I’m a starter Astro. I’m particularly great for getting you started with your own blogging
-			website.
+			Hi, I’m Erik, a QA consultant from Utrecht, The Netherlands. This space is for sharing some thoughts and blog posts with the world.
 		</p>
-		<div class="flex justify-center">
-			<Image
-				src={aboutImg}
-				alt="A cartoon cactus looking at the 'Astro.build' logo"
-				loading="eager"
-				fetchpriority="high"
-			/>
-		</div>
-		<p>Here are my some of my awesome built in features:</p>
-		<ul class="list-inside list-disc">
-			<li>I'm ultra fast as I'm a static site</li>
-			<li>I'm fully responsive</li>
-			<li>I come with a light and dark mode</li>
-			<li>I'm easy to customise and add additional content</li>
-			<li>I have Tailwind CSS styling</li>
-			<li>Shiki code syntax highlighting</li>
-			<li>Satori for auto generating OG images for blog posts</li>
-		</ul>
 		<p>
-			Clone or fork my <a
+			Build with Astro and  <a
 				class="cactus-link inline-block"
 				href="https://github.com/chrismwilliams/astro-cactus"
 				target="_blank"
 				rel="noopener noreferrer"
-				aria-label="github repository">repo</a
-			> if you like me!
+				aria-label="github repository">astro-cactus theme</a
+			>.
 		</p>
 	</div>
+	<section class="mt-16">
+		<h2 class="title mb-4 text-xl">Technologies</h2>
+		<dl class="space-y-4">
+			{
+				cactusTech.map(({ href, title, desc }) => (
+					<div class="flex flex-col gap-2 md:flex-row">
+						<dt>
+							<span class="flex">
+								<a href={href} target="_blank" rel="noopener noreferrer" class="cactus-link">
+									{title}
+								</a>
+								:
+							</span>
+						</dt>
+						<dd>{desc}</dd>
+					</div>
+				))
+			}
+		</dl>
+	</section>
 </PageLayout>
