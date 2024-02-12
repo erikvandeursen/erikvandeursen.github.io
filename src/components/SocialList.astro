@@ -5,24 +5,21 @@ import { Icon } from "astro-icon/components";
 	Uses https://www.astroicon.dev/getting-started/
 	Find icons via guide: https://www.astroicon.dev/guides/customization/#open-source-icon-sets
 */
-const socialLinks: Array<{
-	name: string;
+const socialLinks: {
 	friendlyName: string;
-	link: string;
 	isWebmention?: boolean;
-}> = [
+	link: string;
+	name: string;
+}[] = [
 	{
-		name: "mdi:github",
 		friendlyName: "Github",
 		link: "https://github.com/erikvandeursen",
 	},
 	{
-		name: "mdi:linkedin",
 		friendlyName: "LinkedIn",
 		link: "https://www.linkedin.com/in/erikvandeursen1985/",
 	},
 	{
-		name: "mdi:email",
 		friendlyName: "email",
 		link: "mailto:null",
 		isWebmention: true,
@@ -34,15 +31,15 @@ const socialLinks: Array<{
 	<p>Find me on</p>
 	<ul class="flex flex-1 items-center gap-x-2 sm:flex-initial">
 		{
-			socialLinks.map(({ link, name, friendlyName, isWebmention }) => (
+			socialLinks.map(({ friendlyName, isWebmention, link, name }) => (
 				<li class="flex">
 					<a
 						class="inline-block p-1 sm:hover:text-link"
 						href={link}
-						target="_blank"
 						rel={`noopener noreferrer ${isWebmention ? "me authn" : ""}`}
+						target="_blank"
 					>
-						<Icon class="h-6 w-6" name={name} aria-hidden="true" focusable="false" />
+						<Icon aria-hidden="true" class="h-6 w-6" focusable="false" name={name} />
 						<span class="sr-only">{friendlyName}</span>
 					</a>
 				</li>

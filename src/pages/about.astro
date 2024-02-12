@@ -1,8 +1,7 @@
 ---
-import { Image } from "astro:assets";
-
-import PageLayout from "@/layouts/Base";
 import aboutImg from "@/assets/about-astro.png";
+import PageLayout from "@/layouts/Base.astro";
+import { Image } from "astro:assets";
 
 const meta = {
 	title: "About",
@@ -63,7 +62,6 @@ const cactusTech: Array<{ title: string; desc: string; href: string }> = [
 			Build with Astro and  <a
 				class="cactus-link inline-block"
 				href="https://github.com/chrismwilliams/astro-cactus"
-				target="_blank"
 				rel="noopener noreferrer"
 				aria-label="github repository">astro-cactus theme</a
 			>.
