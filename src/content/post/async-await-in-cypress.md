@@ -1,6 +1,6 @@
 ---
-title: "Async await in Cypress"
-description: "Short tutorial on how to use async await in Cypress"
+title: "Async await in Cypress.io"
+description: "Short tutorial on how to use async await in Cypress.io"
 publishDate: "10 Feb 2024"
 tags: ["test", "toc"]
 ---
