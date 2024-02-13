@@ -10,7 +10,7 @@ dependencies:
     version: 0.5.2(prettier-plugin-astro@0.13.0)(prettier@3.2.4)(typescript@5.3.3)
   '@astrojs/mdx':
     specifier: 2.1.1
-    version: 2.1.1(astro@4.3.5)
+    version: 2.1.1(astro@4.2.1)
   '@astrojs/rss':
     specifier: 4.0.5
     version: 4.0.5
