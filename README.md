@@ -5,3 +5,5 @@
   erikvandeursen.github.io
 </h1><p>
 Blog based on the <a href="https://github.com/chrismwilliams/astro-theme-cactus/generate">Astro Cactus theme</a>. Astro Cactus is a simple opinionated starter built with the Astro framework. Use it to create an easy-to-use blog or website.</p>
+
+[![Deploy to GitHub Pages](https://github.com/erikvandeursen/erikvandeursen.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/erikvandeursen/erikvandeursen.github.io/actions/workflows/deploy.yml)
