@@ -5,7 +5,7 @@ publishDate: "16 Feb 2024"
 tags: ["devops", "toc"]
 ---
 
-When studying for the Azure DevOps and AWS SysOps exams I ran multiple times into the term 'service principal'. A short post to clarity the differences between the two.
+When studying for the Azure AZ-104 and AWS SysOps exams I ran multiple times into the term 'service principal'. A short post to clarity the differences between the two.
 
 In both Azure and AWS, a service principal is a security identity used by services and applications to authenticate and access resources within their respective cloud environments. However, there are some differences in how they are implemented and managed between Azure and AWS. This is due to how they operate in slightly different ways due to the differences in how each cloud platform manages identity and access control.
 
