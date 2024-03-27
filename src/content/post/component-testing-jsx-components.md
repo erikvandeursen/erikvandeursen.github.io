@@ -5,7 +5,7 @@ publishDate: "27 Mar 2024"
 tags: ["react", "test", "toc"]
 ---
 
-Component testing in React JSX involves testing individual components in isolation to ensure they render correctly and behave as expected. Here's a good strategy for component testing: Component testing is crucial for ensuring the reliability and functionality of React JSX components. Here's a good strategy for component testing:
+Component testing in React JSX involves testing individual components in isolation to ensure they render correctly and behave as expected. Here are some tips to help you get started:
 
 # Choose Testing Framework
 
@@ -25,7 +25,7 @@ Write descriptive test names that clearly communicate the purpose of each test c
 
 # Mock Dependencies
 
-If your component relies on external dependencies or services, use mocking to isolate the component during testing. This ensures that tests remain focused on the component's behavior without interference from external factors. If your component depends on external resources such as APIs or libraries, use mocking to isolate the component and test it in isolation. Mocking allows you to control the behavior of dependencies and focus on testing the component itself.
+If your component relies on external dependencies or services, use mocking to isolate the component during testing. This ensures that tests remain focused on the component's behavior without interference from external factors. If your component depends on external resources such as APIs or libraries, use mocking to isolate the component and test it in isolation.
 
 # Test Render Output
 
